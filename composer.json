@@ -6,7 +6,13 @@
         "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
-        "drupal/core-recommended": "^10.2"
+        "drupal/core-recommended": "^10.2",
+        "drupal/entity_embed": "^1.0@dev",
+        "drupal/facets": "^3.0@dev",
+        "drupal/flag": "^4.0@dev",
+        "drupal/geolocation": "^4.0@dev",
+        "drush/drush": "13.x-dev",
+        "mglaman/drupal-check": "dev-main"
     },
     "require-dev": {
         "drupal/core-dev": "^10.2"
@@ -16,6 +22,12 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": false,
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
     "config": {
         "allow-plugins": {
             "composer/installers": true,
