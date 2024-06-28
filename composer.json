@@ -1,6 +1,6 @@
 {
     "name": "dof-dss/drupal-recommended-project",
-    "description": "Custom Core composer to allow installation of dev packages"
+    "description": "Custom Core composer to allow installation of dev packages",
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^2.0",
@@ -8,6 +8,12 @@
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
     "require-dev": {
         "drupal/core-dev": "^10.2"
     },
@@ -16,12 +22,6 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": false,
-    "repositories": {
-        "drupal": {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        }
-    },
     "config": {
         "allow-plugins": {
             "composer/installers": true,
